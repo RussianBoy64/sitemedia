@@ -1,0 +1,77 @@
+@import "./normalize.css";
+@import "./variables.css";
+@import "./buttons.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap");
+
+body {
+  font-size: var(--fs-md);
+  font-family: "Manrope", sans-serif;
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-light);
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 183px;
+}
+
+.header {
+  height: 188px;
+  color: var(--text-color-light);
+
+  background: var(--bg-color-dark);
+  background-image: url("../assets/images/mainscreen-bg.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 30px;
+  padding: 20px 0 4px;
+  border-bottom: 1px solid var(--bg-color-light);
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.header__location {
+  line-height: 16px;
+}
+
+.location__icon {
+  display: inline;
+  width: 12px;
+  height: 16px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.header__phone {
+  font-size: var(--fs-l);
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.navigation__item {
+  white-space: nowrap;
+}

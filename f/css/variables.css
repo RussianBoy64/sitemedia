@@ -1,0 +1,15 @@
+:root {
+  --fs-s: 12px;
+  --fs-md: 16px;
+  --fs-l: 24px;
+  --fs-xxxl: 84px;
+
+  --text-color-light: #ffffff;
+  --text-color-dark: #131313;
+
+  --bg-color-light: #ffffff;
+  --bg-color-dark: #131313;
+
+  --accent-blue: #2766ad;
+  --accent-red: #e22021;
+}
