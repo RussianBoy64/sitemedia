@@ -12,8 +12,9 @@ body {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 1480px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .logo {
@@ -23,12 +24,12 @@ body {
 .header {
   height: 188px;
   color: var(--text-color-light);
-
   background: var(--bg-color-dark);
   background-image: url("../assets/images/mainscreen-bg.webp");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
   background-size: cover;
+  border-bottom: 1px solid var(--bg-color-light);
 }
 
 .header__inner {
@@ -39,7 +40,6 @@ body {
   column-gap: 25px;
   row-gap: 30px;
   padding: 20px 0 4px;
-  border-bottom: 1px solid var(--bg-color-light);
 }
 
 .header__contacts {
@@ -74,4 +74,28 @@ body {
 
 .navigation__item {
   white-space: nowrap;
+}
+
+@media (max-width: 1480px) {
+  .header__contacts {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navigation__item {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__contacts {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navigation__item {
+    padding: 0.5rem;
+  }
 }

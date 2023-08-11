@@ -1,8 +1,12 @@
 :root {
+  /* FONTS  */
+
   --fs-s: 12px;
   --fs-md: 16px;
   --fs-l: 24px;
   --fs-xxxl: 84px;
+
+  /* COLORS */
 
   --text-color-light: #ffffff;
   --text-color-dark: #131313;
