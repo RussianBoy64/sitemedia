@@ -22,14 +22,14 @@
   background-color: var(--bg-color-dark);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 120% 100%;
+  background-size: cover;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
 
 .projects__item:hover {
-  background-size: 130% 110%;
+  transform: scale(1.05);
 }
 
 .projects__year {
@@ -41,4 +41,45 @@
 .projects__text {
   font-size: var(--fs-l);
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .projects__list {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects {
+    padding: 30px 0;
+  }
+
+  .projects__title {
+    margin-bottom: 30px;
+  }
+
+  .projects__item {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__list {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__item {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects__title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .projects__text {
+    font-size: 1rem;
+  }
 }

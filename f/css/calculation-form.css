@@ -28,3 +28,44 @@
   margin-top: 2rem;
   font-size: var(--fs-s);
 }
+
+@media (max-width: 1200px) {
+  .calculation-form {
+    height: fit-content;
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .calculation-form {
+    padding: 40px 0;
+  }
+
+  .calculation-form__title {
+    font-size: 2rem;
+  }
+
+  .calculation-form__form {
+    width: fit-content;
+    margin: 30px auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .calculation-form__text {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .calculation-form__form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .calculation-form__title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+}

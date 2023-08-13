@@ -25,6 +25,8 @@
   z-index: 3;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: ". . . . adress calculation";
+  gap: 1rem;
 }
 
 .footer__column {
@@ -33,11 +35,54 @@
   gap: 1rem;
 }
 
+.footer__contacts {
+  grid-area: adress;
+}
+
 .footer__phone {
   font-size: var(--fs-l);
   font-weight: 700;
 }
 
+.footer__calculation {
+  grid-area: calculation;
+}
+
 .footer__rules {
   padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__inner {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". . ." ". adress calculation";
+    gap: 3rem 1rem;
+  }
+
+  .footer__rules {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: ". . " ". ." " adress calculation";
+  }
+}
+
+@media (max-width: 576px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    grid-template-areas: "." "." "." "." "adress" "calculation";
+    text-align: center;
+  }
+
+  .footer__rules {
+    text-align: center;
+  }
 }

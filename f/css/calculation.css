@@ -4,6 +4,7 @@
   color: var(--text-color-light);
   background-color: var(--bg-color-dark);
   background-image: url("../assets/images/calculation-bg.webp");
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -25,4 +26,35 @@
 .calculation__text {
   grid-area: text;
   font-size: var(--fs-l);
+}
+
+@media (max-width: 1480px) {
+  .calculation {
+    height: fit-content;
+    padding: 50px 0;
+  }
+
+  .calculation__inner {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .calculation__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .calculation__inner {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "text" "btn";
+  }
+}
+
+@media (max-width: 576px) {
+  .calculation__title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
 }

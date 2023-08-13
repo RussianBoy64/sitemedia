@@ -37,3 +37,37 @@
   color: var(--accent-blue);
   text-decoration: underline;
 }
+
+@media (max-width: 1200px) {
+  .news__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .news {
+    padding: 30px 0;
+  }
+
+  .news__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .news__title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .news__item {
+    padding: 1.5rem;
+  }
+}

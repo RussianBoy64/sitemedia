@@ -24,17 +24,60 @@
   background-color: var(--bg-color-dark);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   cursor: pointer;
   box-shadow: 0px 5px 49px 0px rgba(94, 116, 135, 0.29);
   transition: all 300ms ease-in-out;
 }
 
 .info__item:hover {
-  background-size: 110% 110%;
+  transform: scale(1.05);
 }
 
 .info__text {
   text-decoration: underline;
   text-overflow: ellipsis;
+}
+
+@media (max-width: 1200px) {
+  .info__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .info {
+    padding: 30px 0;
+  }
+
+  .info__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info__list {
+    grid-template-columns: 1fr;
+  }
+
+  .info__item {
+    height: 200px;
+  }
+
+  .info__text {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 576px) {
+  .info__title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .info__item {
+    padding: 1.5rem;
+  }
 }

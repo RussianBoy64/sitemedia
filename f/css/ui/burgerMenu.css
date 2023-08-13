@@ -1,0 +1,35 @@
+.hamburger {
+  display: none;
+  height: 26px;
+  width: 32px;
+}
+
+.hamburger__line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--bg-color-light);
+}
+
+.line_1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.line_2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.line_3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

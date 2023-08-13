@@ -7,6 +7,7 @@
 
 @import "./ui/buttons.css";
 @import "./ui/inputs.css";
+@import "./ui/burgerMenu.css";
 
 /* COMPONENTS */
 
@@ -28,6 +29,7 @@
 /* BASICS */
 
 body {
+  position: relative;
   font-size: var(--fs-md);
   font-family: "Manrope", sans-serif;
   color: var(--text-color-dark);
@@ -54,4 +56,58 @@ body {
   font-size: var(--fs-xl);
   font-weight: 700;
   text-align: center;
+}
+
+@media (max-width: 1480px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: var(--fs-xxl);
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 120px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
 }

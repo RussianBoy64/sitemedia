@@ -124,3 +124,27 @@
   transform: scale(0.95);
   opacity: 0.9;
 }
+
+@media (max-width: 992px) {
+  .services__btn {
+    margin: 30px 0 10px;
+  }
+
+  .calculation-form__btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .calculation-form__btn {
+    grid-column: span 1;
+  }
+
+  .calculaton__btn {
+    width: fit-content;
+  }
+
+  .delivery__btn {
+    padding: 1rem;
+  }
+}

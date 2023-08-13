@@ -43,3 +43,35 @@
   transition: max-height 300ms ease-in-out;
   overflow: hidden;
 }
+
+@media (max-width: 1200px) {
+  .faq__list {
+    gap: 2rem;
+  }
+
+  .faq__item {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .faq {
+    padding: 30px 0;
+  }
+
+  .faq__title {
+    margin-bottom: 30px;
+  }
+
+  .faq__list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq__title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+}
