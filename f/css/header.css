@@ -5,6 +5,11 @@
   left: 0;
   right: 0;
   color: var(--text-color-light);
+  transition: all 300ms ease-in-out;
+}
+
+.header_blue {
+  background-color: var(--accent-blue);
 }
 
 .header__inner {

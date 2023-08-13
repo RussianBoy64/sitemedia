@@ -26,6 +26,81 @@
   transition: transform 0.4s ease-in-out;
 }
 
+.hamburger_open .line_1 {
+  transform: rotate(45deg);
+}
+
+.hamburger_open .line_2 {
+  transform: scaleY(0);
+}
+
+.hamburger_open .line_3 {
+  transform: rotate(-45deg);
+}
+
+.burger-menu {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 320px;
+  height: 100%;
+  margin-bottom: 2rem;
+  background-color: var(--accent-blue);
+  overflow-y: scroll;
+  transition: transform 600ms ease-in-out;
+  transform: translateX(-1000px);
+}
+
+.burger-menu_open {
+  transform: translateX(0px);
+}
+
+.burger-menu__navigation {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-menu__item {
+  padding: 1rem;
+}
+
+.burger-menu__contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color-light);
+  text-align: left;
+}
+
+.burger-menu__contacts:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 1rem;
+  border-top: 2px solid var(--bg-color-light);
+}
+
+.burger-menu__location,
+.burger-menu__email,
+.burger-menu__callback,
+.burger-menu__phone {
+  padding: 1rem;
+}
+
+.burger-menu__location,
+.burger-menu__callback {
+  width: fit-content;
+}
+
+.burger-menu__phone {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;

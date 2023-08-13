@@ -58,6 +58,26 @@ body {
   text-align: center;
 }
 
+.backdrop {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 300ms ease-in-out;
+}
+
+.backdrop_show {
+  z-index: 700;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.block-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 1480px) {
   .wrapper {
     padding: 0 30px;
