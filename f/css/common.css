@@ -1,8 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap");
+
 @import "./normalize.css";
 @import "./variables.css";
-@import "./buttons.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap");
+/* UI */
+
+@import "./ui/buttons.css";
+@import "./ui/inputs.css";
+
+/* COMPONENTS */
+
+@import "./header.css";
+@import "./advantages.css";
+@import "./services.css";
+@import "./calculation.css";
+@import "./experience.css";
+@import "./calculation-form.css";
+@import "./projects.css";
+@import "./guarantees.css";
+@import "./delivery.css";
+@import "./feedback.css";
+@import "./info.css";
+@import "./faq.css";
+@import "./news.css";
+@import "./footer.css";
+
+/* BASICS */
 
 body {
   font-size: var(--fs-md);
@@ -21,81 +44,14 @@ body {
   max-width: 183px;
 }
 
-.header {
-  height: 188px;
-  color: var(--text-color-light);
-  background: var(--bg-color-dark);
-  background-image: url("../assets/images/mainscreen-bg.webp");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  border-bottom: 1px solid var(--bg-color-light);
+.section-title {
+  font-size: var(--fs-xxxl);
+  line-height: var(--fs-xxxl);
+  text-align: center;
 }
 
-.header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 25px;
-  row-gap: 30px;
-  padding: 20px 0 4px;
-}
-
-.header__contacts {
-  display: flex;
-  align-items: center;
-  gap: 52px;
-}
-
-.header__location {
-  line-height: 16px;
-}
-
-.location__icon {
-  display: inline;
-  width: 12px;
-  height: 16px;
-  margin-right: 16px;
-  vertical-align: middle;
-}
-
-.header__phone {
-  font-size: var(--fs-l);
+.section-subtitle {
+  font-size: var(--fs-xl);
   font-weight: 700;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.navigation__item {
-  white-space: nowrap;
-}
-
-@media (max-width: 1480px) {
-  .header__contacts {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .navigation__item {
-    padding: 0.5rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .header__contacts {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .navigation__item {
-    padding: 0.5rem;
-  }
+  text-align: center;
 }

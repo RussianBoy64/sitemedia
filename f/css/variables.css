@@ -3,8 +3,10 @@
 
   --fs-s: 12px;
   --fs-md: 16px;
-  --fs-l: 24px;
-  --fs-xxxl: 84px;
+  --fs-l: 22px;
+  --fs-xl: 35px;
+  --fs-xxl: 60px;
+  --fs-xxxl: 72px;
 
   /* COLORS */
 
@@ -12,8 +14,10 @@
   --text-color-dark: #131313;
 
   --bg-color-light: #ffffff;
-  --bg-color-dark: #131313;
+  --bg-color-dark: #2766ad;
 
   --accent-blue: #2766ad;
   --accent-red: #e22021;
+
+  --border-radius: 5px;
 }

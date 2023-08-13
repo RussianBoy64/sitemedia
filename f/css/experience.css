@@ -1,0 +1,28 @@
+.experience {
+  padding: 70px 0;
+}
+
+.experience__subtitle {
+  margin: 0 0 70px;
+}
+
+.experience__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.experience__item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.experience__icon {
+  width: 60px;
+  height: 60px;
+}
+.experience__text {
+  font-size: var(--fs-l);
+  font-weight: 700;
+}

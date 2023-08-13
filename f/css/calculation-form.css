@@ -1,0 +1,30 @@
+.calculation-form {
+  height: 683px;
+  padding: 110px 0;
+  color: var(--text-color-light);
+  text-align: center;
+  background-color: var(--bg-color-dark);
+  background-image: url("../assets/images/calculation-form-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculation-form__title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.calculation-form__form {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 1.1rem;
+  margin: 2rem 0 1rem;
+}
+
+.calculation-form__text {
+  margin-top: 2rem;
+  font-size: var(--fs-s);
+}

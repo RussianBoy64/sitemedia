@@ -1,0 +1,28 @@
+.calculation {
+  height: 356px;
+  padding: 100px 0;
+  color: var(--text-color-light);
+  background-color: var(--bg-color-dark);
+  background-image: url("../assets/images/calculation-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculation__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "title btn" "text btn";
+  align-items: center;
+  gap: 1rem;
+}
+
+.calculation__title {
+  grid-area: title;
+  font-size: var(--fs-xxl);
+  line-height: 50px;
+}
+
+.calculation__text {
+  grid-area: text;
+  font-size: var(--fs-l);
+}

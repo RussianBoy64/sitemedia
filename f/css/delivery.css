@@ -1,0 +1,27 @@
+.delivery {
+  height: 355px;
+  padding: 80px 0;
+  color: var(--text-color-light);
+  background-color: var(--bg-color-dark);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delivery__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.delivery__title {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+}
+
+.delivery__description {
+  margin-bottom: 1rem;
+  font-size: var(--fs-l);
+  font-weight: 700;
+}

@@ -1,0 +1,44 @@
+.feedback {
+  padding: 70px 0;
+  text-align: center;
+  background-color: #f5f7f9;
+  background-image: url("../assets/quotes.png");
+  background-position: 34% 50px;
+  background-repeat: no-repeat;
+}
+
+.feedback__title {
+  margin-bottom: 50px;
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  text-align: center;
+}
+
+.feedback__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+  gap: 4rem;
+}
+
+.feedback__item {
+  padding: 45px;
+  text-align: left;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-color-light);
+  box-shadow: 0px 11px 98px 0px rgba(139, 141, 143, 0.46);
+}
+
+.feedback__name {
+  font-size: var(--fs-l);
+  font-weight: 700;
+}
+
+.feedback__text {
+  margin: 1rem 0;
+  font-size: var(--fs-md);
+}
+
+.feedback__more {
+  margin: 45px 0;
+}

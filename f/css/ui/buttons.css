@@ -1,0 +1,126 @@
+.btn,
+.link {
+  padding: 1rem 1.2rem;
+  color: var(--text-color-light);
+  background: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  outline: none;
+  transition: all 300ms ease-in-out;
+}
+
+.btn:hover,
+.link:hover {
+  transform: scale(1.03);
+  opacity: 0.7;
+}
+
+.btn:active,
+.link:active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.btn_blue {
+  background-color: var(--accent-blue);
+}
+
+.btn_red {
+  background-color: var(--accent-red);
+}
+
+.btn_blue:hover,
+.btn_red:hover {
+  opacity: 1;
+}
+
+.btn_arrow:after {
+  content: url("../../assets/arrows.png");
+  margin-left: 1rem;
+}
+
+.btn_underline {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  transition: all 300ms ease-in-out;
+}
+
+.btn_underline:hover {
+  color: var(--accent-red);
+}
+
+.advantages-form__btn {
+  width: 250px;
+}
+
+.services__btn {
+  margin: 45px 0 30px;
+}
+
+.calculaton__btn {
+  grid-area: btn;
+  width: 313px;
+}
+
+.calculation-form__btn {
+  grid-column: span 3;
+  width: 250px;
+}
+
+.delivery__btn {
+  padding: 1rem 2rem;
+}
+
+.feedback__btn {
+  padding: 0;
+}
+
+.faq__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: var(--fs-l);
+  line-height: 36px;
+  border-radius: 50%;
+  transition: all 300ms ease-in-out;
+  transform: rotate(90deg);
+}
+
+.faq__btn:hover {
+  transform: rotate(90deg) scale(1.05);
+}
+
+.faq__btn:active {
+  transform: rotate(90deg);
+}
+
+.faq__btn_open {
+  transform: rotate(-90deg);
+}
+
+.faq__btn_open:hover {
+  transform: rotate(-90deg) scale(1.05);
+}
+
+.faq__btn_open:active {
+  transform: rotate(-90deg);
+}
+
+.footer__link {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.footer__link:hover {
+  color: var(--accent-red);
+}
+
+.footer__link:active {
+  transform: scale(0.95);
+  opacity: 0.9;
+}

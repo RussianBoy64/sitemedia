@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -23,11 +23,12 @@
   <header class="header">
     <div class="wrapper">
       <div class="header__inner">
-        <img class="logo" src="./f/assets/Logo.png" alt="company logo" />
+        <img class="logo" src="./f/assets/Logo.png" alt="company logo">
         <div class="header__contacts">
           <button class="btn header__location">
-            <img class="location__icon" src="./f/assets/Location.png" alt="location icon" /> Ваш город:
-            Екатеринбург</button>
+            <img class="location-icon" src="./f/assets/Location.png" alt="location icon">
+            Ваш город: Екатеринбург
+          </button>
           <a href="mailto:email@email.ru" class="header__email">email@email.ru</a>
           <button class="btn header__callback">Заказать звонок</button>
           <a class="header__phone" href="tel:+71231231212">+7 123 123 12 12</a>
@@ -43,13 +44,453 @@
           <a class="link navigation__item">Статьи</a>
           <a class="link navigation__item">ГОСТы</a>
           <a class="link navigation__item">Контакты</a>
-          <a class="link navigation__item">Л</a>
+          <a class="link navigation__item"><img class="search-icon" src="./f/assets/search.png" alt="serach icon"></a>
         </nav>
       </div>
     </div>
   </header>
-  <main class="main"></main>
-  <footer class="footer"></footer>
+  <main class="main">
+    <section class="advantages" style="background-image: url('./f/assets/images/mainscreen-bg.webp');">
+      <div class="wrapper advantages__inner">
+        <h1 class="advantages__title">
+          Высокоточная металлообработка <br>
+          на современном оборудовании
+        </h1>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <img src="./f/assets/drill.png" alt="drill icon" class="advantages__icon">
+            <span class="advantages__text">Более<br><span class="advantages__text_big">50
+                видов</span><br>оборудования</span>
+          </li>
+          <li class="advantages__item">
+            <img src="./f/assets/drill.png" alt="drill icon" class="advantages__icon"><span
+              class="advantages__text">До<br><span class="advantages__text_big">1 микрона</span><br>точность
+              обработки</span>
+          </li>
+          <li class="advantages__item">
+            <img src="./f/assets/drill.png" alt="drill icon" class="advantages__icon">
+            <span class="advantages__text">Более<br><span class="advantages__text_big">15 лет</span><br>стаж
+              мастеров</span>
+          </li>
+          <li class="advantages__item">
+            <img src="./f/assets/drill.png" alt="drill icon" class="advantages__icon">
+            <span class="advantages__text">Более
+              <br>
+              <span class="advantages__text_big">12 лет</span><br>на рынке</span>
+          </li>
+        </ul>
+        <form class="advantages__form" action="/" method="post">
+          <p class="advantages-form__title">
+            Запросить <br>
+            расчет стоимости
+          </p>
+          <input type="text" class="input advantages-form__input" placeholder="Ваше имя" title="Введите Ваше имя"
+            maxlength="20">
+          <input type="tel" class="input advantages-form__input" placeholder="Телефон" title="Введите Ваш телефон"
+            maxlength="15">
+          <button class="btn btn_blue advantages-form__btn" type="submit">
+            Отправить запрос
+          </button>
+          <p class="advantages-form__text">
+            Отправляя данную форму, вы соглашаетесьс правилами пользования сайта
+          </p>
+        </form>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="wrapper">
+        <h2 class="section-title services__title">Наши услуги</h2>
+        <ul class="services__list">
+          <li class="services__item" style="background-image: url('./f/assets/images/service-1.jpg')">
+            <span class="services__name">Резка металла</span>
+          </li>
+          <li class="services__item" style="background-image: url('./f/assets/images/service-2.jpg')">
+            <span class="services__name">Гибка металла</span>
+          </li>
+          <li class="services__item" style="background-image: url('./f/assets/images/service-3.jpg')">
+            <span class="services__name">Токарные работы</span>
+          </li>
+          <li class="services__item" style="background-image: url('./f/assets/images/service-4.jpg')">
+            <span class="services__name">Фрезерные работы</span>
+          </li>
+          <li class="services__item" style="background-image: url('./f/assets/images/service-5.jpg')">
+            <span class="services__name">Механическиая обработка</span>
+          </li>
+          <li class="services__item" style="background-image: url('./f/assets/images/service-6.jpg')">
+            <span class="services__name">Химико-термическая обработка</span>
+          </li>
+          <li class="services__item" style="background-image: url('./f/assets/images/service-7.jpg')">
+            <span class="services__name">Сварка</span>
+          </li>
+          <li class="services__item" style="background-image: url('./f/assets/images/service-8.jpg')">
+            <span class="services__name">Шлифование</span>
+          </li>
+        </ul>
+        <button class="btn btn_blue btn_arrow services__btn">Все услуги</button>
+      </div>
+    </section>
+    <section class="calculation">
+      <div class="wrapper calculation__inner">
+        <h3 class="calculation__title">
+          У Вас есть готовое <br>
+          техническое задание?
+        </h3>
+        <p class="calculation__text">Пришлите его нам на просчет стоимости и сроков!</p>
+        <button class="btn btn_red calculaton__btn">Запросить расчет стоимости</button>
+      </div>
+    </section>
+    <section class="experience">
+      <div class="wrapper">
+        <h2 class="section-title">Имеем опыт работ</h2>
+        <h5 class="section-subtitle experience__subtitle">
+          с предприятиями различных отраслей промышленности
+        </h5>
+        <ul class="experience__list">
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Промышленная техника</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Приборостроение</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Ж/Д транспорт</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Робототехника</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Оборонная промышленность</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Мебельное производство</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Химическая промышленность</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Горнодобывающая отрасль</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Строительство зданий</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Электротехника</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Медицина</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Промышленное производство</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Судостроение</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Нефтегазовая сфера</span>
+          </li>
+          <li class="experience__item">
+            <img src="./f/assets/trolley.png" alt="experience icon" class="experience__icon"><span
+              class="experience__text">Автомобилествоение</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="calculation-form">
+      <div class="wrapper">
+        <h3 class="calculation-form__title">
+          Получите расчет стоимости<br>для ваших задач
+        </h3>
+        <form action="/" class="calculation-form__form" method="post">
+          <input type="text" class="input" placeholder="Ваше имя" title="Введите Ваше имя" maxlength="20">
+          <input type="tel" class="input" placeholder="Телефон" title="Введите Ваш телефон" maxlength="15">
+          <input type="email" class="input" placeholder="E-mail" title="Введите Ваш e-mail">
+          <input type="text" class="input" placeholder="Название организации" title="Введите название организации">
+          <div class="input input-file">
+            <span>Прикрепить файл</span>
+            <input type="file" class="input-file__input" title="Прикрепите файл">
+          </div>
+          <input type="text" class="input" placeholder="Написать сообщение" title="Ваше сообщение">
+          <button type="submit" class="btn btn_blue calculation-form__btn">
+            Отправить запрос
+          </button>
+        </form>
+        <p class="calculation-form__text">
+          Отправляя данную форму, вы соглашаетесь<br>с правилами пользования сайта
+        </p>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="wrapper">
+        <h3 class="projects__title">Реализованные проекты</h3>
+        <ul class="projects__list">
+          <li class="projects__item" style="background-image: url('./f/assets/images/projects-1.webp')">
+            <span class="projects__year">2023</span>
+            <p class="projects__text">Резка металла для производства</p>
+          </li>
+          <li class="projects__item" style="background-image: url('./f/assets/images/projects-2.webp')">
+            <span class="projects__year">2023</span>
+            <p class="projects__text"></p>
+            Обработка металла для производства оборудования
+          </li>
+          <li class="projects__item" style="background-image: url('./f/assets/images/projects-3.webp')">
+            <span class="projects__year">2023</span>
+            <p class="projects__text">
+              Резка металла для производства технологического
+            </p>
+          </li>
+          <li class="projects__item" style="background-image: url('./f/assets/images/projects-4.webp')">
+            <span class="projects__year">2022</span>
+            <p class="projects__text">Резка металла для производства оборудования</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="guarantees">
+      <div class="wrapper">
+        <h2 class="section-title">Завод «МеталлПластИнжиниринг» —</h2>
+        <h5 class="section-subtitle guarantees__subtitle">
+          гарантия точности и надеждности!
+        </h5>
+        <div class="guarantees__inner">
+          <p class="guarantees__description">Завод «МеталлПластИнжиниринг» сегодня можно с уверенностью назвать одним из
+            ведущих предприятий в сфере металлообработки. Наша компания занимается производством высокоточных фрезерных
+            и токарных деталей, по чертежам заказчика, из различных металлов, сплавов и полимеров. Производственные
+            мощности позволяют выполнять проекты любого уровня сложности в любых объемах.</p>
+          <ul class="guarantees__list">
+            <li class="guarantees__item">
+              <img src="./f/assets/trolley.png" alt="guarantees icon" class="guarantees__icon"><span
+                class="guarantees__text">до 1 микрона точность обработки</span>
+            </li>
+            <li class="guarantees__item">
+              <img src="./f/assets/trolley.png" alt="guarantees icon" class="guarantees__icon"><span
+                class="guarantees__text">Проверка ОТК и ISO 9002</span>
+            </li>
+            <li class="guarantees__item">
+              <img src="./f/assets/trolley.png" alt="guarantees icon" class="guarantees__icon"><span
+                class="guarantees__text">Опыт реализации проектов высокой сложности</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="delivery" style="background-image: url(./f/assets/images/calculation-bg.webp)">
+      <div class="wrapper delivery__inner">
+        <div class="delivary__content">
+          <h3 class="delivery__title">Собственный автопарк</h3>
+          <p class="delivery__description">
+            и сотрудничество с ведущими транспортными<br>компаниями позволяет
+            обеспечить
+          </p>
+          <h3 class="delivery__title">оперативную отгрузку и доставку по РФ и СНГ</h3>
+        </div>
+        <button class="btn btn_red delivery__btn">Расчитать стоимость доставки</button>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="wrapper">
+        <h3 class="feedback__title">Отзывы наших клиентов</h3>
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <span class="feedback__name">Александр</span>
+            <p class="feedback__text">
+              Завод «МеталлПластИнжиниринг» сегодня можно с уверенностью назвать одним
+              из ведущих предприятий в сфере металлообработки. Наша компания занимается
+              производством высокоточных фрезерных и токарных деталей, по чертежам
+              заказчика, из различных металлов, сплавов и полимеров. Производственные
+              мощности позволяют выполнять
+            </p>
+            <button class="btn btn_underline feedback__btn">Читать полностью</button>
+          </li>
+          <li class="feedback__item">
+            <span class="feedback__name">Евгений</span>
+            <p class="feedback__text">
+              Завод «МеталлПластИнжиниринг» сегодня можно с уверенностью назвать одним
+              из ведущих предприятий в сфере металлообработки. Наша компания занимается
+              производством высокоточных фрезерных и токарных деталей, по чертежам
+              заказчика, из различных металлов, сплавов и полимеров. Производственные
+              мощности позволяют выполнять
+            </p>
+            <button class="btn btn_underline feedback__btn">Читать полностью</button>
+          </li>
+        </ul>
+        <button class="btn btn_blue btn_arrow feedback__more">Все отзывы</button>
+      </div>
+    </section>
+    <section class="info">
+      <div class="wrapper">
+        <h3 class="info__title">Полезная информация</h3>
+        <ul class="info__list">
+          <li class="info__item" style="background-image: url('./f/assets/images/info-1.webp')">
+            <p class="info__text">Пуантилизм, зародившийся в музыльных микроформах</p>
+          </li>
+          <li class="info__item" style="background-image: url('./f/assets/images/info-2.webp')">
+            <p class="info__text">
+              Наша компания занимается производством высокоточных фрезерных и токарных
+              деталей
+            </p>
+          </li>
+          <li class="info__item" style="background-image: url('./f/assets/images/info-3.webp')">
+            <p class="info__text">
+              Глиссандирующая ритмоформула, согласно традиционным представлениям,
+              свободна
+            </p>
+          </li>
+          <li class="info__item" style="background-image: url('./f/assets/images/info-4.webp')">
+            <p class="info__text">
+              В связи с этим нужно подчеркнуть, что крещендирующее хождение синхронно
+              имитирует лирический сет
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="wrapper">
+        <h3 class="faq__title">Частые вопросы</h3>
+        <ul class="faq__list">
+          <li class="faq__item">
+            <p class="faq__question">
+              В связи с этим нужно подчеркнуть, что струна изящно начинает фьюжн, и если
+              в одних голосах или пластах?
+            </p>
+            <button class="btn btn_blue faq__btn">&rsaquo;</button>
+            <p class="faq__answer">Ответ на вопрос</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__question">
+              В связи с этим нужно подчеркнуть, что струна изящно начинает фьюжн, и если
+              в одних голосах?
+            </p>
+            <button class="btn btn_blue faq__btn">&rsaquo;</button>
+            <p class="faq__answer">Ответ на вопрос</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__question">Плотностная компонентная форма вызывает пласт?</p>
+            <button class="btn btn_blue faq__btn">&rsaquo;</button>
+            <p class="faq__answer">Ответ на вопрос</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__question">
+              Пуантилизм, зародившийся в музыкальных микроформах начала ХХ столетия?
+            </p>
+            <button class="btn btn_blue faq__btn">&rsaquo;</button>
+            <p class="faq__answer">Ответ на вопрос</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="calculation-form">
+      <div class="wrapper">
+        <h3 class="calculation-form__title">
+          Получите расчет стоимости<br>для ваших задач
+        </h3>
+        <form action="/" class="calculation-form__form" method="post">
+          <input type="text" class="input" placeholder="Ваше имя" title="Введите Ваше имя" maxlength="20">
+          <input type="tel" class="input" placeholder="Телефон" title="Введите Ваш телефон" maxlength="15">
+          <input type="email" class="input" placeholder="E-mail" title="Введите Ваш e-mail">
+          <input type="text" class="input" placeholder="Название организации" title="Введите название организации">
+          <div class="input input-file">
+            <span>Прикрепить файл</span>
+            <input type="file" class="input-file__input" title="Прикрепите файл">
+          </div>
+          <input type="text" class="input" placeholder="Написать сообщение" title="Ваше сообщение">
+          <button type="submit" class="btn btn_blue calculation-form__btn">
+            Отправить запрос
+          </button>
+        </form>
+        <p class="calculation-form__text">
+          Отправляя данную форму, вы соглашаетесь<br>с правилами пользования сайта
+        </p>
+      </div>
+    </section>
+    <section class="news">
+      <div class="wrapper">
+        <h3 class="news__title">Новости компании</h3>
+        <ul class="news__list">
+          <li class="news__item">
+            <span class="news__date">20 мая 2023</span>
+            <p class="news__text">
+              Пуантилизм, зародившийся в музыкальных микроформах. В связи с этим нужно
+              подчеркнуть, что крещендирующее хождение
+            </p>
+          </li>
+          <li class="news__item">
+            <span class="news__date">18 апреля 2023</span>
+            <p class="news__text">
+              Наша компания занимается производством высокоточных фрезерных и токарных
+              деталей
+            </p>
+          </li>
+          <li class="news__item">
+            <span class="news__date">9 апреля 2023</span>
+            <p class="news__text">
+              Глиссандирующая ритмоформула, согласно традиционным представлениям,
+              свободна
+            </p>
+          </li>
+          <li class="news__item">
+            <span class="news__date">25 марта 2023</span>
+            <p class="news__text">
+              В связи с этим нужно подчеркнуть, что крещендирующее хождение синхронно
+              имитирует
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" style="background-image: url('./f/assets/images/footer-bg.webp')">
+    <div class="wrapper footer__inner">
+      <div class="footer__column">
+        <a href="#" class="footer__link">Резка металла</a>
+        <a href="#" class="footer__link">Гибка металла</a>
+        <a href="#" class="footer__link">Токарные работы</a>
+        <a href="#" class="footer__link">Фрезерные работы</a>
+      </div>
+      <div class="footer__column">
+        <a href="#" class="footer__link">Химико-термическая обработка</a>
+        <a href="#" class="footer__link">Сварка</a>
+        <a href="#" class="footer__link">Фрезерование</a>
+        <a href="#" class="footer__link">Производство деталей</a>
+      </div>
+      <div class="footer__column">
+        <a href="#" class="footer__link">О компании</a>
+        <a href="#" class="footer__link">Оборудование</a>
+        <a href="#" class="footer__link">Отзывы</a>
+      </div>
+      <div class="footer__column">
+        <a href="#" class="footer__link">Реализованные проекты</a>
+        <a href="#" class="footer__link">Статьи</a>
+        <a href="#" class="footer__link">ГОСТы</a>
+        <a href="#" class="footer__link">Контакты</a>
+      </div>
+      <div class="footer__column footer__contacts">
+        <a class="footer__phone" href="tel:+71231231212">+7 123 123 12 12</a>
+        <a href="mailto:email@email.ru" class="footer__email">Email: email@email.ru</a>
+        <p class="footer__adress">
+          Адрес: 620075, Россия,<br>г. Екатеринбург, ул. Улица, 00
+        </p>
+      </div>
+      <div class="footer__column footer__calculation">
+        <button class="btn btn_red footer__btn">Расчет стоимости</button>
+        <button class="btn footer__rules">Правила пользования сайтом</button>
+      </div>
+    </div>
+  </footer>
   <script src="/f/js/common.js"></script>
 </body>
 
